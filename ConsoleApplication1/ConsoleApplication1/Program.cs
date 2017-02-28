@@ -24,18 +24,18 @@ namespace treangle
     class Edge
     {
         Point First;
-        Point Second;         
+        Point Second;
 
         public Edge(Point pointfirst, Point pointsecond)
         {
             First = pointfirst;
             Second = pointsecond;
-           
+
         }
         public double length()
         {
             double length = Math.Sqrt(Math.Pow((Second.X - First.X), 2) + Math.Pow((Second.Y - First.Y), 2));
-            return length;      
+            return length;
         }
     }
 
