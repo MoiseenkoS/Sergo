@@ -23,12 +23,10 @@ namespace Barley_break
         {
             Random gen = new Random();
             int temp = 0;
-            //int temp = gameField[gameField.GetLength(0) - 1, gameField.GetLength(1) - 1];
-            //gameField[gameField.GetLength(0) - 1, gameField.GetLength(1) - 1] = gameField[gameField.GetLength(0) - 1, gameField.GetLength(1) - 2];
-            //gameField[gameField.GetLength(0) - 1, gameField.GetLength(1) - 2] = temp;
+           
 
             int index = 0;
-            //========================
+            
             for (int i = 0; i < gameField.GetLength(0); i++)
             {
                 for (int j = 0; j < gameField.GetLength(1); j++)
@@ -41,13 +39,13 @@ namespace Barley_break
                 }
 
             }
-            //========================
+        
         }
         public bool CheckWin()
         {
             int[] numbers = new int[gameField.Length];
             int count = 0;
-            //=======================================
+         
             for (int i = 0; i < gameField.GetLength(0); i++)
             {
                 for (int j = 0; j < gameField.GetLength(1); j++)
@@ -84,7 +82,7 @@ namespace Barley_break
                 }
             }
             return true;
-            //==================================
+          
         }
     }
 }

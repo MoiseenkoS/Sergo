@@ -9,35 +9,31 @@ namespace Barley_break
 {
     class ClassGameThird : ClassGameSecond
     {
-        //public readonly List<int[]> saveCoordinateGameField;
+        
         public readonly List<int> saveValueGameField;
-        //public int[] help;
+        
         public ClassGameThird(params int[] numbers)
             : base(numbers)
         {
-            //saveCoordinateGameField = new List<int[]>();
+           
             saveValueGameField = new List<int>();
-            //help = new int[4];
+           
         }
         public ClassGameThird(int size)
             : base(size)
         {
             saveValueGameField = new List<int>();
-            //help = new int[4];
+            
         }
 
         public override bool Shift(int mValue)
         {
-            //int[] massiveCoordinateZero = GetLocation(0);
-            //int[] massiveMoveValue = GetLocation(mValue);
+     
             int value = mValue;
 
             if (base.Shift(mValue))
             {
-                //saveCoordinateGameField.Add(massiveCoordinateZero);
-                //saveCoordinateGameField.Add(massiveMoveValue);
-
-                //help = new[] { massiveCoordinateZero[0], massiveCoordinateZero[1], massiveMoveValue[0], massiveMoveValue[1] };
+                
                 saveValueGameField.Add(value);
                 return true;
             }
@@ -52,9 +48,6 @@ namespace Barley_break
                 base.Shift(valueWhichSaveLastNumbers);
             }
         }
-        //public int[] returnHelp()
-        //{
-        //    return help;
-        //}
+       
     }
 }

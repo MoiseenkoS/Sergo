@@ -12,11 +12,11 @@ namespace Barley_break
     {
         static void Main(string[] args)
         {
-            int[] returnInt = ClassWhichReadOfFile.ReadFromFile("C:\\Users\\Home-pc1\\Desktop\\txt.txt");
+            int[] returnInt = ClassWhichReadOfFile.ReadFromFile("C:\\Users\\student\\Desktop\\txt.txt");
             Console.Write("\tВы можете поиграть в ТРИ игры\nВ превой игре у вас не будет говорится о победе\n\tВо второй игре у вас будет реализация перемешивания и выйграша" +
                           "\n\tВ третьей игре вы играете в полноценную игру\n\tВыберете цифры от 1-3 = ");
             int usersName = Convert.ToInt32(Console.ReadLine());
-            //TODO: Сделать размерность!!!
+           
             switch (usersName)
             {
                 case 1:
@@ -73,7 +73,7 @@ namespace Barley_break
                 Console.Write("Введите число = ");
                 moveValue = Convert.ToInt32(Console.ReadLine());
             }
-            //Console.ForegroundColor = ConsoleColor.White;
+            
         }
         static void StartGame2(ClassGameSecond game2)
         {
@@ -107,7 +107,7 @@ namespace Barley_break
                         Console.WriteLine("\t\tНекорректные данные!!!");
                     }
                 }
-                //Console.ForegroundColor = ConsoleColor.White;
+               
                 Console.WriteLine("Вы выиграли!");
                 Console.Write("Если вы хотите сыграть еще раз, намите Y = ");
             }
